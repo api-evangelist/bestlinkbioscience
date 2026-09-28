@@ -1,23 +1,52 @@
 aid: bestlinkbioscience
+
 name: Bestlinkbioscience
-description: 'Bestlinkbioscience is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bestlinkbioscience is a biotech company focused on developing innovative molecular biology tools and services. The company aims to accelerate scientific research by providing high-quality reagents, assay kits, and custom solutions for life science laboratories. Their portfolio includes nucleic acid purification kits, enzyme products, and specialized services for genomics and proteomics, targeting academic, biotech, and pharmaceutical customers worldwide.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bestlinkbioscience/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Molecular-Biology
+- Reagents
+- Life-Sciences
+- Research-Tools
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bestlinkbioscience-hosts.yml
+- type: Vendors
+  url: vendors/bestlinkbioscience-vendors.yml
+- type: DomainSecurity
+  url: security/bestlinkbioscience-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/bestlinkbioscience
+
+apis: []
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
